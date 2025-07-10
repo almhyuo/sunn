@@ -1313,7 +1313,7 @@
         return;
       }
 
-      fetch('static/ma.js')
+      fetch('ma.js')
         .then(response => response.text())
         .then(text => {
           try {
@@ -1368,7 +1368,7 @@
         return;
       }
 
-      fetch('static/ex.js')
+      fetch('ex.js')
         .then(response => response.text())
         .then(text => {
           try {
@@ -1431,7 +1431,7 @@
 
     // تحميل البيانات الأولية
     function loadData() {
-      fetch('static/data.json')
+      fetch('data.json')
         .then(response => {
           if (!response.ok) throw new Error('فشل تحميل البيانات');
           return response.json();
